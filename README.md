@@ -1,3 +1,1 @@
 # Web Portfolio
-
-Allison Ngo
