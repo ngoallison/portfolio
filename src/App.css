@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Light";   /*Can be any text*/
+  src: local("CocogooseLight"),
+    url("../src/fonts/CocogooseLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ultra";   /*Can be any text*/
+  src: local("CocogooseUltra"),
+    url("../src/fonts/CocogooseUltra.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Thin";   /*Can be any text*/
+  src: local("CocogooseThin"),
+    url("../src/fonts/CocogooseThin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Semi";   /*Can be any text*/
+  src: local("CocogooseSemi"),
+    url("../src/fonts/CocogooseSemi.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Pro";   /*Can be any text*/
+  src: local("CocogoosePro"),
+    url("../src/fonts/CocogoosePro.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PSExtra";   /*Can be any text*/
+  src: local("PublicSansExtra"),
+    url("../src/fonts/PublicSansExtra.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PSLight";   /*Can be any text*/
+  src: local("PublicSansLight"),
+    url("../src/fonts/PublicSansLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PSBold";   /*Can be any text*/
+  src: local("PublicSansBold"),
+    url("../src/fonts/PublicSansBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "WSLight";   /*Can be any text*/
+  src: local("WorkSans-Light"),
+    url("../src/fonts/WorkSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "WSRegular";   /*Can be any text*/
+  src: local("WorkSans-Regular"),
+    url("../src/fonts/WorkSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "WSBold";   /*Can be any text*/
+  src: local("WorkSans-SemiBold"),
+    url("../src/fonts/WorkSans-SemiBold.ttf") format("truetype");
+}
+
+.App {
+  background-color: white;
+  /* background-color: #f5ede9; */
+
+}
+
+.page {
+  width: 80%;
+  margin: 0 auto;
+  /* background: rgb(86,61,99);
+  background: radial-gradient(circle, rgba(86,61,99,1) 11%, rgba(97,52,61,1) 53%, rgba(41,37,60,1) 92%);
+  min-width: 100%;
+  min-height: 100vh;
+  color: white; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fade-element {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.fade-element.visible {
+  opacity: 1;
+}
+
+.fade-element.hidden {
+  display: none;
+}
