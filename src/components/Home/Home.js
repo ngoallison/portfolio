@@ -1,9 +1,8 @@
 import React from "react";
 import "../../../src/style.css";
 import { Container, Row, Col } from "react-bootstrap";
-import art from "../../../src/assets/art.png";
 import { FaLinkedinIn, FaRegFile } from "react-icons/fa";
-import { contact } from "../Constants"
+import { contact, images } from "../Constants"
 import { Fade } from "react-awesome-reveal";
 import IconButton from "../IconButton";
 
@@ -46,7 +45,7 @@ function Home() {
               </div>
             </Col>
             <Col style={{ display: "flex", justifyContent: "center" }}>
-              <img className="home-image" src={art} alt="home" />
+              <img className="home-image" src={images.art} alt="home" />
             </Col>
           </Row>
         </Container>

@@ -1,11 +1,9 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { contact } from "../Constants"
+import { contact, images } from "../Constants"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import contact_art from "../../../src/assets/contact_art.png";
 import Resume from "../Resume/Resume";
 import IconButton from "../IconButton";
 
@@ -13,7 +11,7 @@ const Contact = () => {
   return (
     <div className="contact d-flex gap-5">
       <Col className="d-flex justify-content-end" style={{ paddingTop: "50px" }}>
-        <img className="contact-image" src={contact_art} alt="contact"></img>
+        <img className="contact-image" src={images.contact} alt="contact"></img>
       </Col>
       <Col className="d-flex align-items-center justify-content-start">
         <div>
