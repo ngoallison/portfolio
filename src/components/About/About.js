@@ -2,7 +2,6 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import image from "../../../src/assets/school.png";
 function About() {
   return (
     <div className="about-page">
@@ -10,12 +9,12 @@ function About() {
         <Container fluid style={{ padding: 80 }}>
           <Row style={{ display: "flex", alignItems: "center" }}>
             <Col style={{ display: "flex", justifyContent: "center" }}>
-              <img
+              {/* <img
                 className="about-image"
                 style={{ width: 400, height: 400 }}
                 src={image}
                 alt="about"
-              />
+              /> */}
             </Col>
             <Col>
               <Row>

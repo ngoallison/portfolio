@@ -5,9 +5,6 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import ProjectCard from "./ProjectCard";
 import ProjectCardR from "./ProjectCardR";
-import image from "../../../src/assets/school.png";
-import image2 from "../../../src/assets/home.png";
-import gradescope from "../../../src/assets/gradescope.jpg";
 import { projects } from "../Constants";
 import { Fade } from "react-awesome-reveal";
 

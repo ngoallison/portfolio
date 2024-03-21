@@ -1,44 +1,47 @@
-import bevvie from "../../src/assets/bevvie.png";
-import gradescope from "../../src/assets/gradescope.jpg";
-import calendar from "../../src/assets/calendar.png";
-import journal from "../../src/assets/journal.png";
-import att from "../../src/assets/att.png";
-import ucsd from "../../src/assets/UCSD_Seal.png";
-import enrole from "../../src/assets/enrole.png";
+const cloudDomain = "https://d1p3lk0dk2gfrv.cloudfront.net/";
 
-import html from "../../src/assets/html.png";
-import css from "../../src/assets/css.png";
-import js from "../../src/assets/js.png";
-import angular from "../../src/assets/angular.png";
-import react from "../../src/assets/react.png";
-import bs from "../../src/assets/bootstrap.svg";
-
-import flutter from "../../src/assets/flutter.png";
-import dart from "../../src/assets/dart.png";
-import cplus from "../../src/assets/cplus.png";
-import python from "../../src/assets/python.png";
-import swift from "../../src/assets/swift.svg";
-import mysql2 from "../../src/assets/mysql2.png";
-import java from "../../src/assets/java.png";
-import django from "../../src/assets/django.png";
-import ts from "../../src/assets/ts.png";
-import sql from "../../src/assets/sql.png";
-
-import jira from "../../src/assets/jira.png";
-import trello from "../../src/assets/trello.png";
-import palantir from "../../src/assets/palantir.png";
-import pbi from "../../src/assets/powerbi.png";
-import xcode from "../../src/assets/xcode.png";
-import aws from "../../src/assets/aws.png";
-import bash from "../../src/assets/bash.png";
-
-import ms from "../../src/assets/ms.png";
-import graphql from "../../src/assets/graphql.png";
-import express from "../../src/assets/express.png";
-import github from "../../src/assets/github.png";
-import azure from "../../src/assets/azure.png";
-
-import glassy from "../../src/assets/glassy.png";
+export const images = {
+  angular: `${cloudDomain}angular.png`,
+  art: `${cloudDomain}art.png`,
+  att: `${cloudDomain}att.png`,
+  aws: `${cloudDomain}aws.png`,
+  azure: `${cloudDomain}azure.png`,
+  bash: `${cloudDomain}bash.png`,
+  bevvie: `${cloudDomain}bevvie.png`,
+  bootstrap: `${cloudDomain}bootstrap.svg`,
+  brand: `${cloudDomain}brand.png`,
+  calendar: `${cloudDomain}calendar.png`,
+  cplus: `${cloudDomain}cplus.png`,
+  contact: `${cloudDomain}contact_art.png`,
+  css: `${cloudDomain}css.png`,
+  dart: `${cloudDomain}dart.png`,
+  django: `${cloudDomain}django.png`,
+  enrole: `${cloudDomain}enrole.png`,
+  express: `${cloudDomain}express.png`,
+  flutter: `${cloudDomain}flutter.png`,
+  github: `${cloudDomain}github.png`,
+  glassy: `${cloudDomain}glassy.png`,
+  gradescope: `${cloudDomain}gradescope.jpg`,
+  graphql: `${cloudDomain}graphql.png`,
+  html: `${cloudDomain}html.png`,
+  java: `${cloudDomain}java.png`,
+  javascript: `${cloudDomain}js.png`,
+  jira: `${cloudDomain}jira.png`,
+  journal: `${cloudDomain}journal.png`,
+  ms: `${cloudDomain}ms.png`,
+  mysql: `${cloudDomain}mysql2.png`,
+  node: `${cloudDomain}node.png`,
+  palantir: `${cloudDomain}palantir.png`,
+  powerbi: `${cloudDomain}powerbi.png`,
+  python: `${cloudDomain}python.png`,
+  react: `${cloudDomain}react.png`,
+  sql: `${cloudDomain}sql.png`,
+  swift: `${cloudDomain}swift.svg`,
+  trello: `${cloudDomain}trello.png`,
+  typescript: `${cloudDomain}ts.png`,
+  ucsd: `${cloudDomain}UCSD.png`,
+  xcode: `${cloudDomain}xcode.png`,
+}
 
 export const projects = [
   {
@@ -47,7 +50,7 @@ export const projects = [
       "Introducing Glassy, your skincare soulmate! With Glassy, you can track every serum, cream, and lotion you’ve ever loved (or not loved)! Rate them, review them, and use them to craft your perfect personalized skincare routine.",
     text2:
       "Let’s keep it glassy and achieve that flawless “glass skin” that you can be comfortable in!",
-    image: glassy,
+    image: images.glassy,
 
     intro:
       "I love having a beverage. A beverage when it's hot, a beverage when it's cold, a beverage when I'm working, and a beverage while I'm slacking. So many reckless beverage purchases, it's so hard to keep track of my financial catastrophe as well as what beverages I have historically liked.",
@@ -61,7 +64,7 @@ export const projects = [
       "Bevvie, the ultimate quench-venture companion! Sip, snap, and savor your way through a lifetime of beverages, AKA bevvies, by tracking, analyzing, and commemorating each bevvie you purchase.",
     text2:
       "Cheers to memorializing our sweet little treats, one Bevvie at a time!",
-    image: bevvie,
+    image: images.bevvie,
 
     intro:
       "I love having a beverage. A beverage when it's hot, a beverage when it's cold, a beverage when I'm working, and a beverage while I'm slacking. So many reckless beverage purchases, it's so hard to keep track of my financial catastrophe as well as what beverages I have historically liked.",
@@ -74,8 +77,8 @@ export const projects = [
     title: "Gradescope Scheduler",
     text1:
       "As a student, tracking deadlines is essential, especially in the era of remote learning. This script combines Gradescope, a dashboard for school assignments, and Google Calendar to track assignment deadlines and save our grades!",
-    image: gradescope,
-    image2: calendar,
+    image: images.gradescope,
+    image2: images.calendar,
 
     intro:
       "I love having a beverage. A beverage when it's hot, a beverage when it's cold, a beverage when I'm working, and a beverage while I'm slacking. So many reckless beverage purchases, it's so hard to keep track of my financial catastrophe as well as what beverages I have historically liked.",
@@ -89,7 +92,7 @@ export const projects = [
     text1:
       "This bullet journal web application lets you plan your day from top to bottom, writing down daily to-do lists, taking notes, setting event reminders, and using a nifty calendar to see your weekly overview.",
 
-    image: journal,
+    image: images.journal,
     intro:
       "I love having a beverage. A beverage when it's hot, a beverage when it's cold, a beverage when I'm working, and a beverage while I'm slacking. So many reckless beverage purchases, it's so hard to keep track of my financial catastrophe as well as what beverages I have historically liked.",
     body: "Bevvie is a mobile application developed using Swift that serves as a platform to track, analyze, and recollect all your favorite beverages, also known as a bevvie! Bevvie allows users to log in, record the name, location, price, and type of bevvie they purchased that day, inputting it into their own personal database record of lifetime bevvies!",
@@ -101,7 +104,7 @@ export const projects = [
 export const experiences = [
   {
     time: "Jul 2023 - Present",
-    image: att,
+    image: images.att,
     company: "AT&T",
     location: "El Segundo, CA",
     title: "Software Engineer",
@@ -114,7 +117,7 @@ export const experiences = [
   },
   {
     time: "Sep 2022 - Mar 2023",
-    image: ucsd,
+    image: images.ucsd,
     company: "UC San Diego",
     location: "La Jolla, CA",
     title: "Computer Science Tutor",
@@ -128,7 +131,7 @@ export const experiences = [
   },
   {
     time: "Jun 2022 - Aug 2022",
-    image: att,
+    image: images.att,
     company: "AT&T",
     location: "El Segundo, CA",
     title: "Software Engineer Intern",
@@ -141,7 +144,7 @@ export const experiences = [
   },
   {
     time: "Jun 2021 - Apr 2022",
-    image: enrole,
+    image: images.enrole,
     company: "Enrole",
     location: "Remote",
     title: "Frontend Developer Intern",
@@ -156,73 +159,73 @@ export const experiences = [
 
 export const skills = {
   items: [
-    { name: "HTML", img: html, category: "Languages and Databases" },
-    { name: "CSS", img: css, category: "Languages and Databases" },
-    { name: "Javascript", img: js, category: "Languages and Databases" },
-    { name: "Typescript", img: ts, category: "Languages and Databases" },
-    { name: "Python", img: python, category: "Languages and Databases" },
-    { name: "Java", img: java, category: "Languages and Databases" },
-    { name: "C++", img: cplus, category: "Languages and Databases" },
-    { name: "Dart", img: dart, category: "Languages and Databases" },
-    { name: "Swift", img: swift, category: "Languages and Databases" },
-    { name: "SQL", img: sql, category: "Languages and Databases" },
-    { name: "MySQL", img: mysql2, bg: true, category: "Languages and Databases" },
-    { name: "GraphQL", img: graphql, category: "Languages and Databases" },
-    { name: "Angular", img: angular, category: "Frameworks" },
-    { name: "React", img: react, category: "Frameworks" },
-    { name: "Express", img: express, category: "Frameworks" },
-    { name: "Bootstrap", img: bs, bg: true, category: "Frameworks" },
-    { name: "Flutter", img: flutter, category: "Frameworks" },
-    { name: "Django", img: django, category: "Frameworks" },
-    { name: "Bash", img: bash, category: "Other Tools" },
-    { name: "Azure", img: azure, category: "Other Tools" },
-    { name: "AWS", img: aws, category: "Other Tools" },
-    { name: "GitHub", img: github, category: "Other Tools" },
-    { name: "Microsoft Office", img: ms, category: "Other Tools" },
-    { name: "Trello", img: trello, category: "Other Tools" },
-    { name: "Jira", img: jira, category: "Other Tools" },
-    { name: "Palantir", img: palantir, category: "Other Tools" },
-    { name: "PowerBI", img: pbi, category: "Other Tools" },
-    { name: "XCode", img: xcode, category: "Other Tools" },
+    { name: "HTML", img: images.html, category: "Languages and Databases" },
+    { name: "CSS", img: images.css, category: "Languages and Databases" },
+    { name: "Javascript", img: images.javascript, category: "Languages and Databases" },
+    { name: "Typescript", img: images.typescript, category: "Languages and Databases" },
+    { name: "Python", img: images.python, category: "Languages and Databases" },
+    { name: "Java", img: images.java, category: "Languages and Databases" },
+    { name: "C++", img: images.cplus, category: "Languages and Databases" },
+    { name: "Dart", img: images.dart, category: "Languages and Databases" },
+    { name: "Swift", img: images.swift, category: "Languages and Databases" },
+    { name: "SQL", img: images.sql, category: "Languages and Databases" },
+    { name: "MySQL", img: images.mysql, bg: true, category: "Languages and Databases" },
+    { name: "GraphQL", img: images.graphql, category: "Languages and Databases" },
+    { name: "Angular", img: images.angular, category: "Frameworks" },
+    { name: "React", img: images.react, category: "Frameworks" },
+    { name: "Express", img: images.express, category: "Frameworks" },
+    { name: "Bootstrap", img: images.bootstrap, bg: true, category: "Frameworks" },
+    { name: "Flutter", img: images.flutter, category: "Frameworks" },
+    { name: "Django", img: images.django, category: "Frameworks" },
+    { name: "Bash", img: images.bash, category: "Other Tools" },
+    { name: "Azure", img: images.azure, category: "Other Tools" },
+    { name: "AWS", img: images.aws, category: "Other Tools" },
+    { name: "GitHub", img: images.github, category: "Other Tools" },
+    { name: "Microsoft Office", img: images.ms, category: "Other Tools" },
+    { name: "Trello", img: images.trello, category: "Other Tools" },
+    { name: "Jira", img: images.jira, category: "Other Tools" },
+    { name: "Palantir", img: images.palantir, category: "Other Tools" },
+    { name: "PowerBI", img: images.powerbi, category: "Other Tools" },
+    { name: "XCode", img: images.xcode, category: "Other Tools" },
   ]
 };
 
 export const languages = [
-  { name: "HTML", img: html },
-  { name: "CSS", img: css },
-  { name: "Javascript", img: js },
-  { name: "Typescript", img: ts },
-  { name: "Python", img: python },
-  { name: "Java", img: java },
-  { name: "C++", img: cplus },
-  { name: "Dart", img: dart },
-  { name: "Swift", img: swift },
-  { name: "SQL", img: sql },
-  { name: "MySQL", img: mysql2, bg: true },
-  { name: "GraphQL", img: graphql },
+  { name: "HTML", img: images.html },
+  { name: "CSS", img: images.css },
+  { name: "Javascript", img: images.javascript },
+  { name: "Typescript", img: images.typescript },
+  { name: "Python", img: images.python },
+  { name: "Java", img: images.java },
+  { name: "C++", img: images.cplus },
+  { name: "Dart", img: images.dart },
+  { name: "Swift", img: images.swift },
+  { name: "SQL", img: images.sql },
+  { name: "MySQL", img: images.mysql2, bg: true },
+  { name: "GraphQL", img: images.graphql },
 ];
 
 export const frameworks = [
-  { name: "Angular", img: angular },
-  { name: "React", img: react },
-  { name: "Express", img: express },
-  { name: "Bootstrap", img: bs, bg: true },
-  { name: "Flutter", img: flutter },
-  { name: "Django", img: django },
-  { name: "Bash", img: bash },
+  { name: "Angular", img: images.angular },
+  { name: "React", img: images.react },
+  { name: "Express", img: images.express },
+  { name: "Bootstrap", img: images.bs, bg: true },
+  { name: "Flutter", img: images.flutter },
+  { name: "Django", img: images.django },
+  { name: "Bash", img: images.bash },
 ];
 
 
 export const tools = [
-  { name: "Azure", img: azure },
-  { name: "AWS", img: aws },
-  { name: "GitHub", img: github },
-  { name: "Microsoft Office", img: ms },
-  { name: "Trello", img: trello },
-  { name: "Jira", img: jira },
-  { name: "Palantir", img: palantir },
-  { name: "PowerBI", img: pbi },
-  { name: "XCode", img: xcode },
+  { name: "Azure", img: images.azure },
+  { name: "AWS", img: images.aws },
+  { name: "GitHub", img: images.github },
+  { name: "Microsoft Office", img: images.ms },
+  { name: "Trello", img: images.trello },
+  { name: "Jira", img: images.jira },
+  { name: "Palantir", img: images.palantir },
+  { name: "PowerBI", img: images.powerbi },
+  { name: "XCode", img: images.xcode },
 ];
 
 

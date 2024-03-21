@@ -2,7 +2,7 @@ import { Row, Col, Container } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Icons from "./Icons";
-import brand from "../../src/assets/brand.png";
+import { images } from "./Constants";
 import { FaDivide } from "react-icons/fa";
 
 
@@ -12,7 +12,7 @@ function Navigation() {
       <Navbar className="navbar" yle={{ backgroundColor: "white", borderBottom: "1px solid gray" }}>
         <div style={{ display: "flex", alignItems: "center", width: "80%", margin: "0 auto" }}>
           <Navbar.Brand href="#home"><img
-            src={brand}
+            src={images.brand}
             style={{
               height: 80,
             }}
