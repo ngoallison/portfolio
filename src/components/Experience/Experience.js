@@ -1,20 +1,19 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Fade } from "react-awesome-reveal";
 import { styled } from "styled-components";
 import { experiences } from "../Constants";
 
 import ExperienceCard from "./ExperienceCard";
-import ExperienceCardSmall from "./ExperienceCardSmall";
 
-const StyledExperience = styled.div`
-  display: flex;
+// const StyledExperience = styled.div`
+//   display: flex;
 
-    @media (max-width: 1200px) {
-      display: block;
-    }
-  }
-`;
+//     @media (max-width: 1200px) {
+//       display: block;
+//     }
+//   }
+// `;
 
 
 const StyledSize = styled.div`

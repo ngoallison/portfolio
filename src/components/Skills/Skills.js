@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { OverlayTrigger, Tooltip, Image } from "react-bootstrap";
 import "../../skills.css";
 import { skills } from "../Constants"
 import Filter from './Filter';
