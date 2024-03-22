@@ -21,8 +21,8 @@ function ProjectCard(props) {
     <StyledSection>
       <Container className="project-card">
         <Row className="project-row">
-          <Col>
-            <Image src={props.image} alt="project" fluid />
+          <Col xs={12} sm={12} md={6}>
+            <Image className="pb-4" src={props.image} alt="project" fluid />
           </Col>
           <Col className="project-description-left">
             <h1 className="main-name">{props.title}</h1>

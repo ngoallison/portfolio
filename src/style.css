@@ -116,9 +116,9 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .home-content {
     display: flex;
-    align-items: center;
     text-align: left;
     min-height: 100vh;
+    padding-top: 10%;
 }
 
 .home-buttons {
@@ -130,6 +130,10 @@ p, h1, h2, h3, h4, h5, h6 {
 .home-image-col {
     display: flex;
     justify-content: flex-end;
+}
+
+.home-image {
+    max-height: 500px;
 }
 
 .home-image:hover {
@@ -277,23 +281,39 @@ p, h1, h2, h3, h4, h5, h6 {
     padding: 15px 0px;
 }
 
+.contact-image-col {
+    display: flex;
+    justify-content: flex-end
+}
+
+.contact-text-col {
+    display: flex;
+    justify-content: start;
+}
+
+.image-container {
+    max-width: 400px;
+    height: auto;
+}
+
 .contact-image {
-    height: 300px;
+    max-width: 100%;
 }
 
 .contact-image:hover {
     animation: wobble 1s ease;
 }
 
+
+
 /* Components Styling */
 
 .icons-row {
     display: flex;
-    padding: 0px 15px;
+    gap: 10px;
 }
 
 .social-icon {
-    margin: 10px;
     transition: all .2s ease-in-out; 
 
 }

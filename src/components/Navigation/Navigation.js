@@ -1,36 +1,34 @@
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { Nav, Navbar, Container, NavDropdown, Image } from "react-bootstrap";
 import Icons from "../Items/Icons";
 import { images } from "../Constants";
 
 
 const Navigation = () => {
   return (
-    <Navbar fixed="top" className="p-1">
-      <div className="nav-wrapper">
-        <div className="nav">
 
-          <Navbar.Brand href="#home">
-            <img
-              src={images.brand}
-              style={{
-                height: 50,
-              }}
-              alt="pic"
-            >
-            </img>
-          </Navbar.Brand>
-          <div className="navbar-links">
-            <Nav.Link href="#home"><h5>Home</h5></Nav.Link>
-            <Nav.Link href="#experience"><h5>Experience</h5></Nav.Link>
-            <Nav.Link href="#projects"><h5>Projects</h5></Nav.Link>
-            <Nav.Link href="#skills"><h5>Skills</h5></Nav.Link>
-            <Nav.Link href="#contact"><h5>Contact</h5></Nav.Link>
-            <Icons></Icons>
-          </div>
-
-        </div>
-      </div>
+    <Navbar collapseOnSelect expand="md" className="p-1" fixed="top">
+      <Container>
+        <Navbar.Brand href="#home">
+          <Image
+            src={images.brand}
+            style={{
+              height: 50,
+            }}
+            alt="pic"
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto me-3">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#experience">Experience</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#skills">Skills</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+          </Nav>
+          <Icons></Icons>
+        </Navbar.Collapse>
+      </Container>
     </Navbar>
   );
 }
