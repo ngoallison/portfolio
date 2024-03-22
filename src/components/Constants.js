@@ -43,6 +43,11 @@ export const images = {
   xcode: `${cloudDomain}xcode.png`,
 }
 
+export const colors = {
+  tan: "#ffe9de",
+  black: "#434343"
+}
+
 export const projects = [
   {
     title: "glassy",
