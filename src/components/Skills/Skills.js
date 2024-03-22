@@ -1,65 +1,72 @@
-import { React, useState, useRef, useEffect } from "react";
-import { languages, frameworks, tools } from "../Constants";
+import React, { useState } from 'react';
+import { OverlayTrigger, Tooltip, Image } from "react-bootstrap";
+import "../../skills.css";
+import { skills } from "../Constants"
+import Filter from './Filter';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { CSSTransition } from 'react-transition-group';
-import { Fade } from "react-awesome-reveal";
 import Container from "react-bootstrap/Container";
-
-import IconButton from "../IconButton";
-import SkillCard from "./SkillCard";
-
+import SkillsCircle from '../SkillsCircle';
+import { AnimatePresence, motion } from "framer-motion"
 
 const Skills = () => {
 
+    const [displaySkills, setDisplaySkills] = useState(skills.items);
+    const [active, setActive] = useState("all");
 
-  const langs = () => <SkillCard group={languages} />
-  const frames = () => <SkillCard group={frameworks} />
-  const tool = () => <SkillCard group={tools} />
-  const all = () => <SkillCard group={languages.concat(frameworks, tools)} />
+    const handleCategoryClick = (category) => {
 
-  const [skills, setSkills] = useState(all);
+        if (category === active) return;
+        setActive(category);
 
-  const buttonInfo = [
-    { name: "All", group: all },
-    { name: "Languages and Databases", group: langs },
-    { name: "Frameworks", group: frames },
-    { name: "Other Tools", group: tool },
-  ];
+        if (category === "all") {
+            setDisplaySkills(skills.items);
+            return;
+        }
 
-  return (
-    <div style={{ paddingTop: "80px", paddingBottom: "80px" }}>
-      <Container>
-        <Row>
-          <Col>
-            <h1>
-              <span>PROFESSIONAL</span>
-              <span class="main-name"> SKILLSET</span>
-            </h1>
-            <p>...with more to come!</p>
-          </Col>
-          <Col >
+        const filteredData = skills.items.filter(
+            (item) => item.category.toLowerCase() === category
+        );
 
-            <div className="d-flex gap-3 justify-content-end">
-              {buttonInfo.map((button, index) => (
-                <IconButton
-                  onClick={() => setSkills(button.group)}
-                  text={button.name}
-                />
-              ))}
-            </div>
-          </Col>
-        </Row>
-        <Row className="d-flex justify-content-center align-items-center" >
-          <Fade>
-            {skills}
-          </Fade>
-        </Row>
-      </Container>
+        setDisplaySkills(filteredData);
 
-    </div >
-  );
-}
+    };
+
+    return (
+        <Container className="content">
+            <Row>
+                <Col>
+                    <h1>
+                        PROFESSIONAL<span class="main-name"> SKILLSET</span>
+                    </h1>
+                    <p>...with more to come!</p>
+                </Col>
+                <Col className="skills-filter">
+                    <div>
+                        <Filter active={active} handleClick={handleCategoryClick} />
+                    </div>
+                </Col>
+            </Row>
+            <Row className="skills-card">
+                <AnimatePresence>
+                    {displaySkills.map((skill) => (
+                        <motion.div
+                            layout
+                            initial={{ transform: "scale(0)" }}
+                            animate={{ transform: "scale(1)" }}
+                            exit={{ transform: "scale(0)" }}
+                            style={{ width: "auto" }}
+                        >
+                            <SkillsCircle
+                                skill={skill}
+                            />
+                        </motion.div>
+
+                    ))}
+                </AnimatePresence>
+            </Row>
+        </Container>
+    );
+};
 
 export default Skills;
-
