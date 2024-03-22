@@ -40,7 +40,7 @@ function Home() {
             </div>
           </Col>
           <Col>
-            <Image className="home-image" src={images.art} alt="home" fluid />
+            <Image className="home-image" src={images.art} alt="home" style={{ height: "500px" }} />
           </Col>
         </Row>
       </Container>
