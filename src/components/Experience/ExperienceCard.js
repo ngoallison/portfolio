@@ -18,16 +18,16 @@ function ExperienceCard(props) {
   return (
     <StyledSection>
       <Row className="experience-row">
-        <Col>
+        <Col lg={7} >
           <Container className="experience-card">
             <Row>
-              <Col sm={2} className="experience-image">
+              <Col xs={2} md={2} className="experience-image">
                 <Image className="experience-icon" src={props.image} alt="icon" fluid />
               </Col>
-              <Col sm={10}>
+              <Col xs={10} md={10}>
                 <div className="experience-text">
                   <h5 className="bold-text">{props.title}</h5>
-                  <h6>{props.time}</h6>
+                  <h6 className="text-end">{props.time}</h6>
                 </div>
                 <div className="experience-text">
                   <h5>{props.company}</h5>
@@ -40,7 +40,7 @@ function ExperienceCard(props) {
             </Row>
           </Container>
         </Col>
-        <Col md={5} className="experience-skills">
+        <Col lg={5} className="experience-skills">
           {props.items?.map((item) => {
 
             const objects = skills.items.find((objects) => objects.name === item);

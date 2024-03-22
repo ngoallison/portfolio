@@ -21,7 +21,7 @@ function ProjectCardR(props) {
     <StyledSection>
       <Container className="project-card">
         <Row className="project-row">
-          <Col className="project-description-right">
+          <Col className="project-description-left">
             <h1 className="main-name">{props.title}</h1>
             <div className="my-4">
               <p>{props.text1}</p>
@@ -38,8 +38,8 @@ function ProjectCardR(props) {
               text="GitHub"
             />
           </Col>
-          <Col>
-            <Image src={props.image} alt="project" fluid />
+          <Col xs={12} md={6}>
+            <Image className="pt-4" src={props.image} alt="project" fluid />
           </Col>
         </Row>
       </Container>

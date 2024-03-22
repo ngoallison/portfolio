@@ -11,7 +11,7 @@ function Home() {
     <Fade triggerOnce="true" duration="500">
       <Container className="home-content">
         <Row>
-          <Col>
+          <Col xs={12} sm={12} md={6} className="mt-5">
             <div>
               <h3>Hey there, <b className="main-name">I'm Allison!</b></h3>
               <h1 className="main-name mt-5">Software Engineer</h1>
@@ -39,8 +39,8 @@ function Home() {
               </Row>
             </div>
           </Col>
-          <Col>
-            <Image className="home-image" src={images.art} alt="home" style={{ height: "500px" }} />
+          <Col xs={12} sm={12} md={6}>
+            <Image className="home-image pt-4" src={images.art} alt="home" fluid />
           </Col>
         </Row>
       </Container>
