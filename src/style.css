@@ -129,7 +129,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .home-image-col {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .home-image:hover {
@@ -175,7 +175,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .experience-skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 
@@ -220,7 +220,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .skills-filter {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .skill-button {
