@@ -61,7 +61,7 @@ export const projects = [
       "I love having a beverage. A beverage when it's hot, a beverage when it's cold, a beverage when I'm working, and a beverage while I'm slacking. So many reckless beverage purchases, it's so hard to keep track of my financial catastrophe as well as what beverages I have historically liked.",
     body: "Bevvie is a mobile application developed using Swift that serves as a platform to track, analyze, and recollect all your favorite beverages, also known as a bevvie! Bevvie allows users to log in, record the name, location, price, and type of bevvie they purchased that day, inputting it into their own personal database record of lifetime bevvies!",
     items: ["MongoDB", "Express", "NodeJS", "React Native", "Figma"],
-    github: "https://github.com/ngoallison",
+    github: "https://github.com/ngoallison/glassy",
   },
   {
     title: "Bevvie",
@@ -75,7 +75,7 @@ export const projects = [
       "I love having a beverage. A beverage when it's hot, a beverage when it's cold, a beverage when I'm working, and a beverage while I'm slacking. So many reckless beverage purchases, it's so hard to keep track of my financial catastrophe as well as what beverages I have historically liked.",
     body: "Bevvie is a mobile application developed using Swift that serves as a platform to track, analyze, and recollect all your favorite beverages, also known as a bevvie! Bevvie allows users to log in, record the name, location, price, and type of bevvie they purchased that day, inputting it into their own personal database record of lifetime bevvies!",
     items: ["Swift", "Xcode", "Firebase", "Figma"],
-    github: "https://github.com/ngoallison",
+    github: "https://github.com/ngoallison/BevvieUI",
   },
 
   {
@@ -113,11 +113,7 @@ export const experiences = [
     company: "AT&T",
     location: "El Segundo, CA",
     title: "Software Engineer",
-    description: [
-      "Utilized SQL in Palantir tables to analyze customer data, discover relationships, and optimize marketing strategies",
-      "Strategically defined target audiences in Neustar DMP with key customer attributes to cater marketing campaigns",
-      "Leveraged Palantir tools to construct robust data pipelines and custom applications to aid user workflows"
-    ],
+    description: "Utilized SQL in Palantir tables to analyze customer data, leveraged Palantir tools to construct data pipelines and custom applications, strategically defined target audiences in Neustar DMP to optimize marketing strategies.",
     items: ["Python", "SQL", "React", "Palantir", "PowerBI", "Jira"],
   },
   {
@@ -126,12 +122,7 @@ export const experiences = [
     company: "UC San Diego",
     location: "La Jolla, CA",
     title: "Computer Science Tutor",
-    description: [
-      "Engaged with over 300 students in course lectures to encourage discussion and foster a safe learning environment",
-      "Facilitated weekly computer lab sessions with multiple groups of 10-20 students to complete an assigned task",
-      "Held one-on-one office hours to guide students on coursework, answer questions, and improve understanding",
-      "Administered exams and graded coursework, offering insightful feedback to promote student learning"
-    ],
+    description: "Engaged with students through lectures, facilitated computer lab sessions, conducted one-on-one office hours, and administered exams with personalized feedback to enhance learning experiences.",
     items: ["Java", "Python", "Bash", "Trello"],
   },
   {
@@ -140,11 +131,7 @@ export const experiences = [
     company: "AT&T",
     location: "El Segundo, CA",
     title: "Software Engineer Intern",
-    description: [
-      "Developed and maintained a dynamic company website leveraging tools such as Django, SQL, and Angular",
-      "Designed, produced, and proposed a software solution idea during company broadcast alongside team members",
-      "Streamlined a repetitive internal process by creating a Python tkinter GUI, reducing completion time by 75%"
-    ],
+    description: "Developed and maintained a dynamic internal company website using Django, SQL, and Angular. Streamlined internal processes by creating a Python tkinter GUI, resulting in a 75% reduction in completion time.",
     items: ["Typescript", "Angular", "SQL", "Python", "Django"],
   },
   {
@@ -153,11 +140,7 @@ export const experiences = [
     company: "Enrole",
     location: "Remote",
     title: "Frontend Developer Intern",
-    description: [
-      "Contributed to design and development of key app features and responsive design for enhanced user experience",
-      "Demonstrated proficiency in tools such as Flutter, Dart, AWS, and mobile emulators to build components",
-      "Spearheaded talent recruitment and hiring of new interns, participating in candidate interviews and assessments"
-    ],
+    description: "Contributed to the design and development of essential app features, showcased proficiency in tools like Flutter, Dart, AWS, and mobile emulators for component building.",
     items: ["Flutter", "Dart", "AWS", "XCode", "Jira"],
   },
 ];

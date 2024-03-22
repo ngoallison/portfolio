@@ -34,7 +34,7 @@ function ExperienceCard(props) {
                   <h6><i>{props.location}</i></h6>
                 </div>
                 <div>
-                  <p className="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p className="description-text">{props.description}</p>
                 </div>
               </Col>
             </Row>
