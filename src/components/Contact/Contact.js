@@ -3,8 +3,8 @@ import { Row, Col, Container } from "react-bootstrap";
 import { contact, images, colors } from "../Constants"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import IconButton from "../IconButton";
-import Icons from "../Icons";
+import IconButton from "../Items/IconButton";
+import Icons from "../Items/Icons";
 
 const Contact = () => {
   return (

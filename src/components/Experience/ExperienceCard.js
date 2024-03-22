@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import { OverlayTrigger, Tooltip, Image } from "react-bootstrap";
 import { skills } from "../Constants";
 import { styled } from "styled-components";
-import SkillsCircle from "../SkillsCircle";
+import SkillsCircle from "../Items/SkillsCircle";
 
 const StyledSection = styled.div`
   display: flex;

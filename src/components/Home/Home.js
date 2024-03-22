@@ -4,7 +4,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import { FaLinkedinIn, FaRegFile } from "react-icons/fa";
 import { contact, images, colors } from "../Constants"
 import { Fade } from "react-awesome-reveal";
-import IconButton from "../IconButton";
+import IconButton from "../Items/IconButton";
 
 function Home() {
   return (

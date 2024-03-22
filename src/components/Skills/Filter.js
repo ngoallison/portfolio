@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import IconButton from "../IconButton";
+import IconButton from "../Items/IconButton";
 
 function Filter({ handleClick, active }) {
 
