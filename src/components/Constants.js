@@ -56,10 +56,6 @@ export const projects = [
     text2:
       "Let’s keep it glassy and achieve that flawless “glass skin” that you can be comfortable in!",
     image: images.glassy,
-
-    intro:
-      "I love having a beverage. A beverage when it's hot, a beverage when it's cold, a beverage when I'm working, and a beverage while I'm slacking. So many reckless beverage purchases, it's so hard to keep track of my financial catastrophe as well as what beverages I have historically liked.",
-    body: "Bevvie is a mobile application developed using Swift that serves as a platform to track, analyze, and recollect all your favorite beverages, also known as a bevvie! Bevvie allows users to log in, record the name, location, price, and type of bevvie they purchased that day, inputting it into their own personal database record of lifetime bevvies!",
     items: ["MongoDB", "Express", "NodeJS", "React Native", "Figma"],
     github: "https://github.com/ngoallison/glassy",
   },
@@ -70,10 +66,6 @@ export const projects = [
     text2:
       "Cheers to memorializing our sweet little treats, one Bevvie at a time!",
     image: images.bevvie,
-
-    intro:
-      "I love having a beverage. A beverage when it's hot, a beverage when it's cold, a beverage when I'm working, and a beverage while I'm slacking. So many reckless beverage purchases, it's so hard to keep track of my financial catastrophe as well as what beverages I have historically liked.",
-    body: "Bevvie is a mobile application developed using Swift that serves as a platform to track, analyze, and recollect all your favorite beverages, also known as a bevvie! Bevvie allows users to log in, record the name, location, price, and type of bevvie they purchased that day, inputting it into their own personal database record of lifetime bevvies!",
     items: ["Swift", "Xcode", "Firebase", "Figma"],
     github: "https://github.com/ngoallison/BevvieUI",
   },
@@ -85,9 +77,6 @@ export const projects = [
     image: images.gradescope,
     image2: images.calendar,
 
-    intro:
-      "I love having a beverage. A beverage when it's hot, a beverage when it's cold, a beverage when I'm working, and a beverage while I'm slacking. So many reckless beverage purchases, it's so hard to keep track of my financial catastrophe as well as what beverages I have historically liked.",
-    body: "Bevvie is a mobile application developed using Swift that serves as a platform to track, analyze, and recollect all your favorite beverages, also known as a bevvie! Bevvie allows users to log in, record the name, location, price, and type of bevvie they purchased that day, inputting it into their own personal database record of lifetime bevvies!",
     items: ["Python", "Google API"],
     github: "https://github.com/samliu000/GradescopeScheduler",
   },
@@ -98,9 +87,6 @@ export const projects = [
       "This bullet journal web application lets you plan your day from top to bottom, writing down daily to-do lists, taking notes, setting event reminders, and using a nifty calendar to see your weekly overview.",
 
     image: images.journal,
-    intro:
-      "I love having a beverage. A beverage when it's hot, a beverage when it's cold, a beverage when I'm working, and a beverage while I'm slacking. So many reckless beverage purchases, it's so hard to keep track of my financial catastrophe as well as what beverages I have historically liked.",
-    body: "Bevvie is a mobile application developed using Swift that serves as a platform to track, analyze, and recollect all your favorite beverages, also known as a bevvie! Bevvie allows users to log in, record the name, location, price, and type of bevvie they purchased that day, inputting it into their own personal database record of lifetime bevvies!",
     items: ["HTML", "CSS", "Javascript", "Figma", "Miro"],
     github: "https://github.com/cse110-sp21-group31/cse110-sp21-group31",
   },
@@ -177,45 +163,6 @@ export const skills = {
     { name: "XCode", img: images.xcode, category: "Other Tools" },
   ]
 };
-
-export const languages = [
-  { name: "HTML", img: images.html },
-  { name: "CSS", img: images.css },
-  { name: "Javascript", img: images.javascript },
-  { name: "Typescript", img: images.typescript },
-  { name: "Python", img: images.python },
-  { name: "Java", img: images.java },
-  { name: "C++", img: images.cplus },
-  { name: "Dart", img: images.dart },
-  { name: "Swift", img: images.swift },
-  { name: "SQL", img: images.sql },
-  { name: "MySQL", img: images.mysql2, bg: true },
-  { name: "GraphQL", img: images.graphql },
-];
-
-export const frameworks = [
-  { name: "Angular", img: images.angular },
-  { name: "React", img: images.react },
-  { name: "Express", img: images.express },
-  { name: "Bootstrap", img: images.bs, bg: true },
-  { name: "Flutter", img: images.flutter },
-  { name: "Django", img: images.django },
-  { name: "Bash", img: images.bash },
-];
-
-
-export const tools = [
-  { name: "Azure", img: images.azure },
-  { name: "AWS", img: images.aws },
-  { name: "GitHub", img: images.github },
-  { name: "Microsoft Office", img: images.ms },
-  { name: "Trello", img: images.trello },
-  { name: "Jira", img: images.jira },
-  { name: "Palantir", img: images.palantir },
-  { name: "PowerBI", img: images.powerbi },
-  { name: "XCode", img: images.xcode },
-];
-
 
 export const contact = {
   linkedin: "https://www.linkedin.com/in/allisontlngo/",
