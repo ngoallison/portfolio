@@ -34,19 +34,19 @@ const Skills = () => {
     return (
         <Container className="content">
             <Row>
-                <Col>
+                <Col sm={12} lg={5}>
                     <h1>
                         PROFESSIONAL<span class="main-name"> SKILLSET</span>
                     </h1>
                     <p>...with more to come!</p>
                 </Col>
-                <Col className="skills-filter">
+                <Col sm={12} lg={7} className="skills-filter">
                     <div>
                         <Filter active={active} handleClick={handleCategoryClick} />
                     </div>
                 </Col>
             </Row>
-            <Row className="skills-card">
+            <Row className="skills-card my-5">
                 <AnimatePresence>
                     {displaySkills.map((skill) => (
                         <motion.div

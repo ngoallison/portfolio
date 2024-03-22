@@ -21,7 +21,7 @@ function ProjectCard(props) {
     <StyledSection>
       <Container className="project-card">
         <Row className="project-row">
-          <Col xs={12} sm={12} md={6}>
+          <Col xs={12} md={6}>
             <Image className="pb-4" src={props.image} alt="project" fluid />
           </Col>
           <Col className="project-description-left">
