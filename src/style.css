@@ -288,7 +288,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .contact-text-col {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .image-container {
