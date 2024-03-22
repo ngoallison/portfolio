@@ -15,8 +15,8 @@ function Home() {
             <div>
               <h3>Hey there, <b className="main-name">I'm Allison!</b></h3>
               <h1 className="main-name mt-5">Software Engineer</h1>
-              <h4>Based in Orange County, CA</h4>
-              <h5 className="description-text mt-5">I'm a recent computer science graduate from UC San Diego with a focus on frontend engineering and further aspirations to move into the full-stack developer space. I'd love to chat, so let's connect!</h5>
+              <h5>Based in Orange County, CA</h5>
+              <h5 className="description-text mt-5">I'm a recent computer science graduate from UC San Diego looking for full-stack web development opportunities to contribute my creativity and technical skills towards. I'd love to chat, so let's connect!</h5>
               <Row>
                 <div className="home-buttons">
                   <IconButton
