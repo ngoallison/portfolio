@@ -9,7 +9,7 @@ const IconButton = (props) => {
             type="button"
             style={{
                 backgroundColor: props.background,
-                color: props.color
+                color: props.color ? props.color : "black"
             }}
         >
             <IconContext.Provider

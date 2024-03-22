@@ -1,11 +1,5 @@
 import { React, useState } from "react";
 import { Card, OverlayTrigger, Tooltip } from "react-bootstrap";
-import { languages } from "../Constants";
-import { frameworks } from "../Constants";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import { Fade } from "react-awesome-reveal";
-import { motion, AnimatePresence } from "framer-motion";
 
 const SkillCard = (props) => {
   return (
@@ -22,17 +16,11 @@ const SkillCard = (props) => {
               }
             >
               <div className={"skill-circle"} style={{ width: "120px", height: "120px", borderRadius: "60px" }}>
-                <span>
-                  <img
-                    className="skill-images"
-                    src={item.img}
-                    style={{
-                      height: 90,
-                      padding: 0,
-                    }}
-                    alt="pic"
-                  ></img>
-                </span>
+                <img
+                  className="skill-images"
+                  src={item.img}
+                  alt="pic"
+                ></img>
               </div>
             </OverlayTrigger>
           );
