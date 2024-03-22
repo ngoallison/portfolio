@@ -1,34 +1,4 @@
 @font-face {
-  font-family: "Light";   /*Can be any text*/
-  src: local("CocogooseLight"),
-    url("../src/fonts/CocogooseLight.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Ultra";   /*Can be any text*/
-  src: local("CocogooseUltra"),
-    url("../src/fonts/CocogooseUltra.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Thin";   /*Can be any text*/
-  src: local("CocogooseThin"),
-    url("../src/fonts/CocogooseThin.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Semi";   /*Can be any text*/
-  src: local("CocogooseSemi"),
-    url("../src/fonts/CocogooseSemi.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Pro";   /*Can be any text*/
-  src: local("CocogoosePro"),
-    url("../src/fonts/CocogoosePro.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "PSExtra";   /*Can be any text*/
   src: local("PublicSansExtra"),
     url("../src/fonts/PublicSansExtra.ttf") format("truetype");

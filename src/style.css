@@ -313,11 +313,12 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .link-button-active {
     background-color: #F59AA6;
-    color: white;
 }
 
 .link-button:hover {
     transform: scale(1.05);
+    background-color: #F59AA6;
+
 }
 
 
