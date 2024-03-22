@@ -16,7 +16,7 @@ const IconButton = (props) => {
                 value={{
                     size: "30px",
                     className: "react-icons",
-                    color: props.iconColor,
+                    color: props.iconColor ? props.iconColor : "black"
                 }}
             >
                 {props.icon}
