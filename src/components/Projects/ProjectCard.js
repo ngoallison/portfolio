@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { FaGithub } from "react-icons/fa";
 import { styled } from "styled-components";
-import IconButton from "../IconButton";
+import IconButton from "../Items/IconButton";
 
 const StyledCard = styled.div`
   @media (max-width: 1200px) {

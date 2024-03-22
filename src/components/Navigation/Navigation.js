@@ -1,7 +1,7 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Icons from "./Icons";
-import { images } from "./Constants";
+import Icons from "../Items/Icons";
+import { images } from "../Constants";
 
 
 const Navigation = () => {

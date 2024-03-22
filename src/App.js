@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Navigation from "../src/components/Navbar";
+import Navigation from "./components/Navigation/Navigation";
 import Home from "../src/components/Home/Home";
 import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";

@@ -6,7 +6,7 @@ import Filter from './Filter';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import SkillsCircle from '../SkillsCircle';
+import SkillsCircle from '../Items/SkillsCircle';
 import { AnimatePresence, motion } from "framer-motion"
 
 const Skills = () => {
