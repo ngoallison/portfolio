@@ -1,8 +1,6 @@
 import React from "react";
-import { Row, Col, Container } from "react-bootstrap";
-import { contact, images, colors } from "../Constants"
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { IconContext } from "react-icons";
+import { Container } from "react-bootstrap";
+import { contact, images } from "../Constants"
 import IconButton from "../Items/IconButton";
 import Icons from "../Items/Icons";
 

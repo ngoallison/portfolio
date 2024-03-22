@@ -1,20 +1,4 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import { Card, OverlayTrigger, Tooltip } from "react-bootstrap";
-import { languages, tools } from "../Constants";
-import { frameworks } from "../Constants";
-import { styled } from "styled-components";
-
-
-const StyledSection = styled.div`
-  display: flex;
-  @media (max-width: 1200px) {
-    display: grid;
-  }
-`;
-
 function ExperienceCardSmall(props) {
   return (
 

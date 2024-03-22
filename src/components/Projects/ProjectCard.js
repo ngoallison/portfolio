@@ -4,11 +4,11 @@ import { FaGithub } from "react-icons/fa";
 import { styled } from "styled-components";
 import IconButton from "../Items/IconButton";
 
-const StyledCard = styled.div`
-  @media (max-width: 1200px) {
-    padding-bottom: 35px;
-  }
-`;
+// const StyledCard = styled.div`
+//   @media (max-width: 1200px) {
+//     padding-bottom: 35px;
+//   }
+// `;
 const StyledSection = styled.div`
   display: flex;
   @media (max-width: 1200px) {

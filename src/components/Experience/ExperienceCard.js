@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { OverlayTrigger, Tooltip, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import { skills } from "../Constants";
 import { styled } from "styled-components";
 import SkillsCircle from "../Items/SkillsCircle";
