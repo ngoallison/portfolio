@@ -181,6 +181,7 @@ p, h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    gap: 2%;
 }
 
 
@@ -250,7 +251,7 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 90px;
     height: 90px;
     border-radius: 50px;
-    margin-bottom: 20%;
+    margin-bottom: 10px;
     transition: all .2s ease-in-out; 
 }
 
