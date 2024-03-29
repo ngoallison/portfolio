@@ -1,31 +1,27 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
+import axios from 'axios';
 import { Container } from "react-bootstrap";
 import { Fade } from "react-awesome-reveal";
-import { styled } from "styled-components";
-import { experiences } from "../Constants";
-
 import ExperienceCard from "./ExperienceCard";
 
-// const StyledExperience = styled.div`
-//   display: flex;
-
-//     @media (max-width: 1200px) {
-//       display: block;
-//     }
-//   }
-// `;
-
-
-const StyledSize = styled.div`
-    min-width: 33%;  
-
-    @media (max-width: 1200px) {
-      padding-bottom: 20px;
-    }
-  }
-`;
 
 function Experience() {
+
+  const [experience, setExperience] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(process.env.REACT_APP_EXPERIENCE_API);
+        const sortedItems = response.data.sort((a, b) => a.id - b.id);
+        setExperience(sortedItems);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
   return (
     <Container className="content">
       <div className="section-header">
@@ -38,23 +34,26 @@ function Experience() {
         </h1>
 
       </div>
-      {experiences?.map((item) => {
-        return (
-          <StyledSize>
-            <Fade direction="up" triggerOnce="true">
-              <ExperienceCard
-                time={item.time}
-                image={item.image}
-                company={item.company}
-                location={item.location}
-                title={item.title}
-                description={item.description}
-                items={item.items}
-              />
-            </Fade>
-          </StyledSize>
-        );
-      })}
+      <div>
+        {experience ? (
+          <>
+            {experience?.map((item) => {
+              return (
+                <Fade direction="up" triggerOnce="true">
+                  <ExperienceCard
+                    time={item.time}
+                    image={item.image}
+                    company={item.company}
+                    location={item.location}
+                    title={item.title}
+                    description={item.description}
+                    items={item.items}
+                  />
+                </Fade>
+              );
+            })}</>) :
+          (<p className="text-center">Loading...</p>)}
+      </div>
     </Container>
   );
 }
