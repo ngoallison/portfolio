@@ -1,4 +1,5 @@
-import { React, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import React from "react";
 import axios from 'axios';
 import Container from "react-bootstrap/Container";
 import ProjectCard from "./ProjectCard";
@@ -26,10 +27,10 @@ function Projects() {
   return (
     <Container className="content">
       <div className="section-header">
-        <h1>
-          PERSONAL
-          <h1 className="main-name"> PROJECTS</h1>
-        </h1>
+        <div>
+          <h1>PERSONAL</h1>
+          <h1 className="main-name">PROJECTS</h1>
+        </div>
         <hr className="section-bar" />
       </div>
       <div>
@@ -38,8 +39,8 @@ function Projects() {
             {projects?.map((item, index) => {
               if (index % 2 === 0) {
                 return (
-                  <>
-                    <Fade direction="left" triggerOnce="true">
+                  <React.Fragment key={index}>
+                    <Fade direction="left" triggerOnce="true" key={index}>
                       <ProjectCard
                         key={index}
                         title={item.title}
@@ -52,13 +53,13 @@ function Projects() {
                         github={item.github}
                       />
                     </Fade>
-                    <hr />
-                  </>
+                    <hr key="separator" />
+                  </React.Fragment>
                 );
               } else {
                 return (
-                  <>
-                    <Fade direction="right" triggerOnce="true">
+                  <React.Fragment key={index}>
+                    <Fade direction="right" triggerOnce="true" key={index}>
                       <ProjectCardR
                         key={index}
                         title={item.title}
@@ -72,8 +73,8 @@ function Projects() {
                         github={item.github}
                       />
                     </Fade>
-                    <hr />
-                  </>
+                    <hr key="separator" />
+                  </React.Fragment>
                 );
               }
             })}</>) : (<p className="text-center">Loading...</p>)}

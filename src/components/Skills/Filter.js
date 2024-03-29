@@ -7,6 +7,7 @@ function Filter({ handleClick, active }) {
         <div className="d-flex flex-wrap gap-3" style={{ marginBottom: "1rem" }}>
             {items.map((item) => (
                 <IconButton
+                    key={item}
                     className={active === item.toLowerCase() && "link-button-active"}
                     onClick={() => handleClick(item.toLowerCase())}
                     text={item}

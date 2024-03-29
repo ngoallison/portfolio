@@ -29,7 +29,7 @@ function ProjectCardR(props) {
             </div>
             <div className="project-skills my-3">
               {props.items?.map((item) => (
-                <p className="learn-tag">{item}</p>
+                <p key={item} className="learn-tag">{item}</p>
               ))}
             </div>
             <IconButton

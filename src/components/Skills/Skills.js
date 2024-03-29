@@ -36,7 +36,7 @@ const Skills = () => {
             <Row>
                 <Col sm={12} lg={5}>
                     <h1>
-                        PROFESSIONAL<span class="main-name"> SKILLSET</span>
+                        PROFESSIONAL<span className="main-name"> SKILLSET</span>
                     </h1>
                     <p>...with more to come!</p>
                 </Col>
@@ -48,8 +48,9 @@ const Skills = () => {
             </Row>
             <Row className="skills-card my-5">
                 <AnimatePresence>
-                    {displaySkills.map((skill) => (
+                    {displaySkills.map((skill, index) => (
                         <motion.div
+                            key={index}
                             layout
                             initial={{ transform: "scale(0)" }}
                             animate={{ transform: "scale(1)" }}

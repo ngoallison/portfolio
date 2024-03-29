@@ -1,4 +1,5 @@
-import { React, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import React from "react";
 import axios from 'axios';
 import { Container } from "react-bootstrap";
 import { Fade } from "react-awesome-reveal";
@@ -25,22 +26,25 @@ function Experience() {
   return (
     <Container className="content">
       <div className="section-header">
-        <h1>
-          WORK<h1 className="main-name"> EXPERIENCE</h1>
-        </h1>
+        <div>
+          <h1>WORK</h1>
+          <h1 className="main-name"> EXPERIENCE</h1>
+        </div>
         <hr className="section-bar" />
-        <h1>TOOLS
-          <h1 className="main-name text-end" > USED</h1>
-        </h1>
+        <div>
+          <h1>TOOLS</h1>
+          <h1 className="main-name text-end">USED</h1>
+        </div>
 
       </div>
       <div>
         {experience ? (
           <>
-            {experience?.map((item) => {
+            {experience?.map((item, index) => {
               return (
-                <Fade direction="up" triggerOnce="true">
+                <Fade direction="up" triggerOnce="true" key={index}>
                   <ExperienceCard
+                    key={index}
                     time={item.time}
                     image={item.image}
                     company={item.company}

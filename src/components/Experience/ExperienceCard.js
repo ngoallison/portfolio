@@ -46,6 +46,7 @@ function ExperienceCard(props) {
             const objects = skills.items.find((objects) => objects.name === item);
             return (
               <SkillsCircle
+                key={item}
                 skill={objects}
                 small={true}
               />
