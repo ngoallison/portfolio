@@ -13,7 +13,8 @@ function Experience() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(process.env.REACT_APP_EXPERIENCE_API);
+        const baseURL = process.env.REACT_APP_EXPERIENCE_API;
+        const response = await axios.get(baseURL);
         const sortedItems = response.data.sort((a, b) => a.id - b.id);
         setExperience(sortedItems);
       } catch (error) {
