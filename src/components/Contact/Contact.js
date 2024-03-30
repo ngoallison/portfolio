@@ -12,7 +12,7 @@ const Contact = () => {
           <Image className="contact-image" src={images.contact} alt="contact" fluid></Image>
         </div>
       </Col>
-      <Col lg={6} className="contact-text-col">
+      <Col className="contact-text-col">
         <div>
           <h1>
             LET'S <strong className="main-name">CONNECT!</strong>
