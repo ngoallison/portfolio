@@ -13,7 +13,8 @@ function Projects() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(process.env.REACT_APP_PROJECTS_API);
+        const baseURL = process.env.REACT_APP_PROJECTS_API;
+        const response = await axios.get(baseURL);
         const sortedItems = response.data.sort((a, b) => a.id - b.id);
         setProjects(sortedItems);
       } catch (error) {
