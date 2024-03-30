@@ -13,6 +13,8 @@ function Projects() {
   useEffect(() => {
     const fetchData = async () => {
       try {
+
+        // set base url for projects
         const baseURL = process.env.REACT_APP_PROJECTS_API;
         const response = await axios.get(baseURL);
         const sortedItems = response.data.sort((a, b) => a.id - b.id);
