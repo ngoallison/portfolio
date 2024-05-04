@@ -166,7 +166,7 @@ export const skills = {
 
 export const contact = {
   linkedin: "https://www.linkedin.com/in/allisontlngo/",
-  resume: "https://d1p3lk0dk2gfrv.cloudfront.net/Resume.pdf"
+  resume: "https://d1p3lk0dk2gfrv.cloudfront.net/AllisonNgo_Resume.pdf"
 };
 
 

@@ -16,7 +16,7 @@ function Home() {
               <h3>Hey there, <b className="main-name">I'm Allison!</b></h3>
               <h1 className="main-name mt-5">Software Engineer</h1>
               <h5>Based in Orange County, CA</h5>
-              <h5 className="description-text mt-5">I'm a recent computer science graduate from UC San Diego looking for full-stack web development opportunities to contribute my creativity and technical skills towards. I'd love to chat, so let's connect!</h5>
+              <h5 className="description-text mt-5">I am a software engineer focusing on full-stack development projects, with background in building web and mobile applications. I'm proficient in various technologies such as Javascript, React, Node.js, SQL, Swift, and the list continues. I'm always eager to grow my skill set, explore new technologies and programming languages, and tackle new problems. I'd love to chat, so let's connect!</h5>
               <Row>
                 <div className="home-buttons">
                   <IconButton
